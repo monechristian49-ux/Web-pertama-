@@ -1,6 +1,14 @@
-body{
-  padding: 25px;
+function sapaSaya() {
+    alert("Halo! Terima kasih sudah mengunjungi website saya 😄");
 }
-.title {
-	color: #5C6AC4;
+
+function showTime() {
+    const waktu = new Date();
+
+    document.getElementById("currentTime").textContent =
+        waktu.toLocaleString("id-ID");
 }
+
+showTime();
+
+setInterval(showTime, 1000);
