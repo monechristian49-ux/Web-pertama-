@@ -1,7 +1,14 @@
-function showTime() {
-	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+function sapaSaya() {
+    alert("Halo! Terima kasih sudah mengunjungi website saya 😄");
 }
+
+function showTime() {
+    const waktu = new Date();
+
+    document.getElementById("currentTime").textContent =
+        waktu.toLocaleString("id-ID");
+}
+
 showTime();
-setInterval(function () {
-	showTime();
-}, 1000);
+
+setInterval(showTime, 1000);
